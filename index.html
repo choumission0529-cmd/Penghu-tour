@@ -100,7 +100,7 @@ class="hidden sm:block text-xs bg-slate-100 px-3 py-1.5 rounded-lg">
                 <div class="space-y-3">
                     <div class="border-l-4 border-sky-500 pl-4 py-2">
                         <div class="text-xs text-slate-500">去程 06/14 (日)</div>
-                        <div class="font-bold">07:20 台中朝馬 ➔ 布袋港</div>
+                        <div class="font-bold">07:20 台中中港轉運站 ➔ 布袋港</div>
                         <div class="text-sm text-sky-600 font-medium">12:30 起程 ➔ 14:00 抵達馬公</div>
                     </div>
                     <div class="border-l-4 border-amber-500 pl-4 py-2">
@@ -292,10 +292,12 @@ class="hidden sm:block text-xs bg-slate-100 px-3 py-1.5 rounded-lg">
         // 行程數據 (更新真實地圖連結)
         const dayData = {
             1: [
-                { time: "07:20", task: "台中朝馬站集合", loc: "統聯客運朝馬站", url: "https://www.google.com/maps/search/?api=1&query=台中統聯朝馬站" },
-                { time: "12:30", task: "布袋港取票登船", loc: "布袋港旅客服務中心", url: "https://www.google.com/maps/search/?api=1&query=布袋港旅客服務中心" },
-                { time: "14:00", task: "抵達馬公/牽車", loc: "馬公港", url: "https://www.google.com/maps/search/?api=1&query=馬公港" },
-                { time: "15:30", task: "北環風光：跨海大橋", loc: "澎湖跨海大橋", url: "https://www.google.com/maps/search/?api=1&query=澎湖跨海大橋" },
+                { time: "07:00", task: "台中中港轉運站集合", loc: "台中中港轉運站", url: "https://www.google.com/maps/search/?api=1&query=台中中港轉運" },
+                { time: "07:20", task: "搭車前往布袋港", loc: "台中中港轉運站", url: "https://www.google.com/maps/search/?api=1&query=台中中港轉運" },
+                { time: "09:10", task: "抵達布袋港 領船票", loc: "布袋港旅客服務中心", url: "https://www.google.com/maps/search/?api=1&query=布袋港旅客服務中心" },
+                { time: "10:00", task: "布袋港登船", loc: "布袋港旅客服務中心", url: "https://www.google.com/maps/search/?api=1&query=布袋港旅客服務中心" },
+                { time: "11:30", task: "抵達馬公/牽車", loc: "馬公港", url: "https://www.google.com/maps/search/?api=1&query=馬公港" },
+                { time: "12:30", task: "北環風光：跨海大橋", loc: "澎湖跨海大橋", url: "https://www.google.com/maps/search/?api=1&query=澎湖跨海大橋" },
                 { time: "18:00", task: "市區晚餐：海鮮大餐", loc: "馬公市區", url: "https://www.google.com/maps/search/?api=1&query=馬公市海鮮餐廳" }
             ],
             2: [
